@@ -31,5 +31,6 @@ stow -D my_folder
 
 
 ## Specific information for each app
-* [tmux](tmux/readme.md)
-* [vim](vim/readme.md)
+* [tmux](tmux/README.md)
+* [vim](vim/README.md)
+* [zsh](zsh/README.md)
