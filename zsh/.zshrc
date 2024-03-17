@@ -82,7 +82,7 @@ plugins=(
   zsh-syntax-highlighting
   zsh-completions
   git
-  ssh-agent
+  # ssh-agent
   tmux
   virtualenv
 )
@@ -131,3 +131,6 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
   eval "$(pyenv virtualenv-init -)"
 fi
+
+# To customize prompt, run `p10k configure` or edit ~/dotfiles/zsh/.p10k.zsh.
+[[ ! -f ~/dotfiles/zsh/.p10k.zsh ]] || source ~/dotfiles/zsh/.p10k.zsh
