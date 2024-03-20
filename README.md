@@ -17,7 +17,7 @@ Then stow all my dotfiles in function of the OS.
 
 ```bash
 # If necessary
-chmod +X install_stow.sh
+chmod +X setup_env.sh
 # Launch the install script
 ./setup_env.sh
 ```
@@ -31,6 +31,7 @@ stow -D my_folder
 
 
 ## Specific information for each app
+* [nvim](nvim/README.md)
 * [tmux](tmux/README.md)
 * [vim](vim/README.md)
 * [zsh](zsh/README.md)

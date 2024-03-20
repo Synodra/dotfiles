@@ -1,3 +1,2 @@
-- Remove ssh-agent zsh pluging that don't work on wsl
-- Update setup_env.sh that not work on mac
-- chmod setup_env.sh to fasten the process of setup
+- Add i3 configuration
+- Add VScode configuration

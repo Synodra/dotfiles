@@ -82,7 +82,6 @@ plugins=(
   zsh-syntax-highlighting
   zsh-completions
   git
-  # ssh-agent
   tmux
   virtualenv
 )
@@ -112,10 +111,11 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig='vim ~/.zshrc'
-alias ohmyzshconfig='vim ~/.oh-my-zsh'
+alias zshconfig='nvim ~/.zshrc'
+alias ohmyzshconfig='nvim ~/.oh-my-zsh'
 alias dir='lsd -al'
 alias fp="fzf --preview 'bat --style changes --color=always --line-range :500 {}'"
+alias load-ssh='bash ~/dotfiles/zsh/scripts/ssh_agent_launcher.sh'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

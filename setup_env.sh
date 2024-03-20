@@ -3,12 +3,22 @@
 # Cleanup all empty simlink
 for i in $(find $HOME -maxdepth 1 -type l);
 do
-    # not working on macos, solution : https://stackoverflow.com/questions/1055671/how-can-i-get-the-behavior-of-gnus-readlink-f-on-a-mac
-    found=$(readlink -e $i)
-    if [ -z $found ]
-    then
-        echo "Unable to find $i"
-        rm $i
+    # readlink is not working on MacOS, so switch to geadlink
+    # But, this adds a dependency to coreutils
+    if [[ "$OSTYPE" == "darwin"* ]]; then
+        found=$(greadlink -e $i)
+        if [ -z $found ]
+        then
+            echo "Unable to find $i"
+            rm $i
+        fi
+    else
+        found=$(readlink -e $i)
+        if [ -z $found ]
+        then
+            echo "Unable to find $i"
+            rm $i
+        fi
     fi
 done
 
@@ -21,6 +31,7 @@ done
 # Init stow simlinks
 stow vim \
     tmux \
-    zsh
+    zsh \
+    nvim
 
 exit 0

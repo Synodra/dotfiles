@@ -1,11 +1,7 @@
 return {
-  -- Color scheme configuration
-  {
-    "catppuccin/nvim",
-    name = "catppuccin-frappe",
-    priority = 1000,
-    opts = {
-      colorscheme = "catppuccin-frappe",
-    },
-  }
+  -- Configure LazyVim to load catppuccin
+  "LazyVim/LazyVim",
+  opts = {
+    colorscheme = "catppuccin",
+  },
 }
