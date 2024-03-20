@@ -1,0 +1,9 @@
+# start the ssh-agent in the background. Then add an id to the agent: ssh-add ~/.ssh/id_rsa
+eval "$(ssh-agent -s)"
+ssh-add my_key
+
+# List all ssh key
+ssh-add -l/L
+
+# Delete a loaded key
+ssh-add -D my_key
