@@ -82,7 +82,6 @@ plugins=(
   zsh-syntax-highlighting
   zsh-completions
   git
-  ssh-agent       # To comment when using WSL
   tmux
   virtualenv
 )
@@ -116,6 +115,7 @@ alias zshconfig='nvim ~/.zshrc'
 alias ohmyzshconfig='nvim ~/.oh-my-zsh'
 alias dir='lsd -al'
 alias fp="fzf --preview 'bat --style changes --color=always --line-range :500 {}'"
+alias load-ssh='bash ~/dotfiles/zsh/scripts/ssh_agent_launcher.sh'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -131,10 +131,6 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
   eval "$(pyenv virtualenv-init -)"
 fi
-
-# UNCOMMENT WHEN ON WSL : Load ssh config
-# eval $(ssh-agent -s)
-# ssh-add ~/.ssh/id_ed25519
 
 # To customize prompt, run `p10k configure` or edit ~/dotfiles/zsh/.p10k.zsh.
 [[ ! -f ~/dotfiles/zsh/.p10k.zsh ]] || source ~/dotfiles/zsh/.p10k.zsh
