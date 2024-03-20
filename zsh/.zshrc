@@ -115,7 +115,7 @@ alias zshconfig='nvim ~/.zshrc'
 alias ohmyzshconfig='nvim ~/.oh-my-zsh'
 alias dir='lsd -al'
 alias fp="fzf --preview 'bat --style changes --color=always --line-range :500 {}'"
-alias load-ssh='bash ~/dotfiles/zsh/scripts/ssh_agent_launcher.sh'
+alias load-ssh='bash ~/.local/bin/ssh_agent_launcher.sh'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
