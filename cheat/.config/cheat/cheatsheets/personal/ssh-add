@@ -3,7 +3,7 @@ eval "$(ssh-agent -s)"
 ssh-add my_key
 
 # List all ssh key
-ssh-add -l/L
+ssh-add -l/L <my_key>
 
 # Delete a loaded key
-ssh-add -D my_key
+ssh-add -D <my_key>
