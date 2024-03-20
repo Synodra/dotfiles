@@ -31,6 +31,7 @@ stow -D my_folder
 
 
 ## Specific information for each app
+* [i3 wm](i3/README.md)
 * [nvim](nvim/README.md)
 * [tmux](tmux/README.md)
 * [vim](vim/README.md)

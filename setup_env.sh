@@ -29,9 +29,10 @@ do
 done
 
 # Init stow simlinks
-stow vim \
+stow nvim \
     tmux \
-    zsh \
-    nvim
+    vim \
+    zsh
+    # i3 \
 
 exit 0
