@@ -1,0 +1,20 @@
+{
+    "workbench.colorTheme": "Catppuccin Frappé",
+    "redhat.telemetry.enabled": true,
+    "workbench.startupEditor": "none",
+    "editor.fontSize": 14,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "editor.rulers": [
+        80,120
+    ],
+    "editor.unicodeHighlight.allowedCharacters": {
+        "️": true
+    },
+    "terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono'",
+    "terminal.integrated.fontSize": 14,
+    "editor.fontFamily": "'FiraCode Nerd Font Mono',Menlo, Monaco, 'Courier New', monospace",
+    "workbench.iconTheme": "catppuccin-frappe",
+    "editor.tabSize": 2
+}
