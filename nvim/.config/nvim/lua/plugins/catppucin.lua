@@ -1,6 +1,8 @@
-require("catppuccin").setup({
-  flavour = "frappe", -- latte, frappe, macchiato, mocha
-})
-
--- setup must be called before loading
-vim.cmd.colorscheme "catppuccin"
+return {
+  "catppuccin/nvim",
+  name = "catppuccin",
+  priority = 1000,
+  opts = {
+    flavour = "frappe", -- latte, frappe, macchiato, mocha
+  }
+}
