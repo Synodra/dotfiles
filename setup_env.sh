@@ -25,7 +25,8 @@ for i in .vimrc .tmux.conf .p10k.zsh .zshrc; do
 done
 
 # Init stow simlinks
-stow cheat \
+stow aerospace \
+	cheat \
 	nvim \
 	tmux \
 	vim \

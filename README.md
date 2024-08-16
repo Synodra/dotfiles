@@ -31,6 +31,7 @@ stow -D my_folder
 
 
 ## Specific information for each app
+* [aerospace](aerospace/README.md)
 * [cheat](cheat/README.md)
 * [nvim](nvim/README.md)
 * [tmux](tmux/README.md)
