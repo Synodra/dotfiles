@@ -1,0 +1,18 @@
+# Edit system configuration
+sudoedit /etc/nixos/configuration.nix
+
+# View possible configuration
+man configuration.nix
+
+# Build System
+sudo nixos-rebuild switch
+
+# Clean old system
+sudo nix-collect-garbage --delete-older-than 15d
+
+
+# Init flake
+sudo nix flake init
+
+# update flake
+nix flake update
